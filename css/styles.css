@@ -7,6 +7,10 @@
   --accent-text-color: #ffffff;
 
   --accent-color: #2196f3;
+
+  --primary-background: #F5F5F5;
+  --secondary-background: #F5F4FA;
+  --accent-background: #2F303A;
 }
 
 body {
@@ -14,19 +18,39 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 
+.current{
+color: var(--accent-color);
+}
 /* ----------component------------- */
+.studio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+}
 
 /* ========studio========= */
+
+/* --hero-- */
+.hero{
+background-color: var(--accent-background);
+}
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--accent-text-color); */
+  color: var(--accent-text-color); 
 }
 .main-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -34,6 +58,11 @@ body {
   color: var(--accent-text-color);
   background-color: var(--accent-color);
 }
+
+/* ---peculiarities-- */
+.peculiarities{
+background-color: var(--primary-background);
+} 
 
 .title {
   font-size: 14px;
@@ -47,12 +76,17 @@ body {
   color: var(--secondary-text-color);
 }
 
-.studio-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
+
+/* -----about----- */
+.about{
+background-color: var(--primary-background);
 }
 
+
+/* ---team---- */
+.team{
+background-color: var(--secondary-background);
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -65,18 +99,29 @@ body {
   color: var(--secondary-text-color);
 }
 
+
+
 /* ========portfolio====== */
+.portfolio-main{
+background-color: var(--primary-background);
+}
 .portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--primary-text-color);
+  background-color: var(--secondary-background);
   cursor: pointer;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--accent-text-color);
   background-color: var(--accent-color);
+}
+
+.portfilio-list-link{
+color: inherit;
 }
 
 .portfolio-title {
@@ -106,6 +151,13 @@ body {
   color: var(--accent-color);
 }
 
+
+.logo-footer{
+color: var(--accent-text-color);
+}
+
+
+
 /* -------------header---------------- */
 .nav-link {
   font-weight: 500;
@@ -118,6 +170,12 @@ body {
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+
+.current{
+color: var(--accent-color);
+}
+
 
 .header-contacts {
   font-weight: 500;
@@ -132,6 +190,11 @@ body {
 }
 
 /* -----------------footer---------------- */
+.footer{
+background-color: var(--accent-background);
+}
+
+
 .address {
   font-style: normal;
   font-size: 14px;
@@ -143,6 +206,6 @@ body {
 .address:focus{
  color: var(--accent-color);
 }
-/* .adress-link{
+.adress-link{
 color: var(--accent-text-color); 
-} */
+} 
