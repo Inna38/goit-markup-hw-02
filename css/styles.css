@@ -19,15 +19,30 @@ body {
   color: var(--primary-text-color);
 }
 ul{
+  /* padding: 0;  */
+   margin: 0;
   list-style: none;
 }
 a{
   text-decoration: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+  margin-top: 0;
+  margin-bottom: 0;
+} 
+
 
 .current{
 color: var(--accent-color);
 }
+
+.container{
+ width: 1200px; 
+ margin: 0 auto;
+ outline: 2px solid red;
+}
+
+
 /* ----------component------------- */
 .studio-title {
   font-weight: 700;
@@ -102,9 +117,6 @@ background-color: var(--secondary-background);
 
 
 /* ========portfolio====== */
-.portfolio-main{
-background-color: var(--primary-background);
-}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -199,8 +211,8 @@ background-color: var(--accent-background);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-text-color);
-  /* color: rgba(255, 255, 255, 0.6);  */
+ 
+ color: rgba(255, 255, 255, 0.6);  
 }
 .address:hover,
 .address:focus{
